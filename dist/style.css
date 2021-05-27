@@ -1,0 +1,135 @@
+#header {
+    width: 100%;
+    background-color: rgb(255, 113, 113);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    width: 100%;
+    background-color: rgb(255, 113, 113);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#footer > p {
+    margin: auto;
+}
+
+#location {
+    border: 0;
+    width: 30vw;
+    height: 22.5vw;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(67, 221, 255), rgb(152, 25, 195));
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(255, 195, 67), rgb(25, 195, 67));
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+    width: 60vw;
+    padding: 3vh;
+}
+
+#page-header {
+    padding: 10px 5vw;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.page-card {
+    margin: 10px;
+    width: 40vw;
+    padding: 30px 5vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hours {
+    width: 13vw;
+    margin: 10px 5vw;
+}
+
+.category-header {
+    text-align: center;
+}
+
+.item-card {
+    border-radius: 5px;
+    width: 35vw;
+    height: 35vh;
+    display: grid;
+    grid-template-areas:
+        'image description'
+        'price price';
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 4fr 1fr;
+    grid-gap: 10px;
+    background-color: #2196f3;
+    padding: 10px;
+    margin: 20px;
+}
+
+.category-header {
+    margin-bottom: 15px;
+}
+
+.item-card > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.image-container {
+    background-color: rgba(255, 255, 255, 0)!important;
+}
+
+.item-img {
+    width: calc((35vw - 30px) / 5 * 2);
+    height: calc((35vh - 50px) / 5 * 4);
+    object-fit: fill;
+}
+
+.item-description {
+    padding: 10px;
+    text-align: center;
+}
+
+.item-price {
+    grid-column: span 2;
+    padding-top: 5px;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-evenly;
+}
